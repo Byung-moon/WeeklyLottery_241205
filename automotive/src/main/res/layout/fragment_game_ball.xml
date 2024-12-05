@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- 번호 표시 -->
+    <FrameLayout
+        android:id="@+id/ballLayout"
+        android:layout_width="1800dp"
+        android:layout_height="350dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/circleText1"
+            style="@style/game_ball_style" />
+        <TextView
+            android:id="@+id/circleText2"
+            style="@style/game_ball_style" />
+        <TextView
+            android:id="@+id/circleText3"
+            style="@style/game_ball_style" />
+        <TextView
+            android:id="@+id/circleText4"
+            style="@style/game_ball_style" />
+        <TextView
+            android:id="@+id/circleText5"
+            style="@style/game_ball_style" />
+        <TextView
+            android:id="@+id/circleText6"
+            style="@style/game_ball_style" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center">
+            <TextView
+                android:id="@+id/ball_box"
+                android:layout_width="1320dp"
+                android:layout_height="270dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ball_box"
+                android:gravity="center" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/popupButton"
+                android:layout_width="650dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                style="@style/GamePopupButtonStyle"
+                android:text="START 버튼 누를 손을 선택해주세요"
+                android:textSize="24sp"
+                android:textAllCaps="false" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <!-- 번호 추첨 시작 버튼 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+        <ImageButton
+            android:id="@+id/startBallButton"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="5dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/start_ball"
+            android:contentDescription="@string/description_start_hand_button"/>
+        <ImageButton
+            android:id="@+id/lefthandButton"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="240dp"
+            android:layout_height="320dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="200dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/hand_left"
+            android:contentDescription="@string/description_left_hand_button"/>
+
+        <ImageButton
+            android:id="@+id/righthandButton"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="240dp"
+            android:layout_height="320dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="200dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/hand_right"
+            android:contentDescription="@string/description_right_hand_button"/>
+
+    </FrameLayout>
+</LinearLayout>

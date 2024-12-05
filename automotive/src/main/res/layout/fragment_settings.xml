@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:paddingBottom="10dp">
+
+        <!-- 상단 제목 -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로또게임 번호별 당첨확률 조정"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- SeekBar 1번부터 45번까지 -->
+
+        <RelativeLayout
+            android:layout_width="2000dp"
+            android:layout_height="650dp"
+            android:columnCount="45"
+            android:rowCount="3"
+            android:orientation="horizontal">
+
+            <!-- 첫 번째 행 (컬럼들) -->
+            <TextView
+                android:id="@+id/valueText1"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="0dp" />
+            <TextView
+                android:id="@+id/valueText2"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="40dp" />
+            <TextView
+                android:id="@+id/valueText3"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="80dp" />
+            <TextView
+                android:id="@+id/valueText4"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="120dp" />
+            <TextView
+                android:id="@+id/valueText5"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="160dp" />
+            <TextView
+                android:id="@+id/valueText6"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="200dp" />
+            <TextView
+                android:id="@+id/valueText7"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="240dp" />
+            <TextView
+                android:id="@+id/valueText8"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="280dp" />
+            <TextView
+                android:id="@+id/valueText9"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="322dp" />
+            <TextView
+                android:id="@+id/valueText10"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="362dp" />
+            <TextView
+                android:id="@+id/valueText11"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="402dp" />
+            <TextView
+                android:id="@+id/valueText12"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="442dp" />
+            <TextView
+                android:id="@+id/valueText13"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="482dp" />
+            <TextView
+                android:id="@+id/valueText14"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="522dp" />
+            <TextView
+                android:id="@+id/valueText15"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="562dp" />
+            <TextView
+                android:id="@+id/valueText16"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="602dp" />
+            <TextView
+                android:id="@+id/valueText17"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="642dp" />
+            <TextView
+                android:id="@+id/valueText18"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="682dp" />
+            <TextView
+                android:id="@+id/valueText19"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="722dp" />
+            <TextView
+                android:id="@+id/valueText20"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="762dp" />
+            <TextView
+                android:id="@+id/valueText21"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="802dp" />
+            <TextView
+                android:id="@+id/valueText22"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="842dp" />
+            <TextView
+                android:id="@+id/valueText23"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="882dp" />
+            <TextView
+                android:id="@+id/valueText24"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="922dp" />
+            <TextView
+                android:id="@+id/valueText25"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="962dp" />
+            <TextView
+                android:id="@+id/valueText26"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1002dp" />
+            <TextView
+                android:id="@+id/valueText27"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1042dp" />
+            <TextView
+                android:id="@+id/valueText28"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1082dp" />
+            <TextView
+                android:id="@+id/valueText29"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1122dp" />
+            <TextView
+                android:id="@+id/valueText30"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1162dp" />
+            <TextView
+                android:id="@+id/valueText31"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1202dp" />
+            <TextView
+                android:id="@+id/valueText32"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1242dp" />
+            <TextView
+                android:id="@+id/valueText33"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1282dp" />
+            <TextView
+                android:id="@+id/valueText34"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1322dp" />
+            <TextView
+                android:id="@+id/valueText35"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1362dp" />
+            <TextView
+                android:id="@+id/valueText36"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1402dp" />
+            <TextView
+                android:id="@+id/valueText37"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1442dp" />
+            <TextView
+                android:id="@+id/valueText38"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1482dp" />
+            <TextView
+                android:id="@+id/valueText39"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1522dp" />
+            <TextView
+                android:id="@+id/valueText40"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1562dp" />
+            <TextView
+                android:id="@+id/valueText41"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1602dp" />
+            <TextView
+                android:id="@+id/valueText42"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1642dp" />
+            <TextView
+                android:id="@+id/valueText43"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1682dp" />
+            <TextView
+                android:id="@+id/valueText44"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1722dp" />
+            <TextView
+                android:id="@+id/valueText45"
+                android:text="100"
+                style="@style/setting_text_value"
+                android:translationX="1764dp" />
+
+            <!-- 두 번째 행 (각각의 컬럼에 SeekBar 설정) -->
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar1"
+                style="@style/seeting_seekbar"
+
+                android:translationX="-282dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar2"
+                style="@style/seeting_seekbar"
+                android:translationX="-242dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar3"
+                style="@style/seeting_seekbar"
+                android:translationX="-202dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar4"
+                style="@style/seeting_seekbar"
+                android:translationX="-162dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar5"
+                style="@style/seeting_seekbar"
+                android:translationX="-122dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar6"
+                style="@style/seeting_seekbar"
+                android:translationX="-82dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar7"
+                style="@style/seeting_seekbar"
+                android:translationX="-42dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar8"
+                style="@style/seeting_seekbar"
+                android:translationX="-2dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar9"
+                style="@style/seeting_seekbar"
+                android:translationX="42dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar10"
+                style="@style/seeting_seekbar"
+                android:translationX="82dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar11"
+                style="@style/seeting_seekbar"
+                android:translationX="122dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar12"
+                style="@style/seeting_seekbar"
+                android:translationX="162dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar13"
+                style="@style/seeting_seekbar"
+                android:translationX="202dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar14"
+                style="@style/seeting_seekbar"
+                android:translationX="242dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar15"
+                style="@style/seeting_seekbar"
+                android:translationX="282dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar16"
+                style="@style/seeting_seekbar"
+                android:translationX="322dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar17"
+                style="@style/seeting_seekbar"
+                android:translationX="362dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar18"
+                style="@style/seeting_seekbar"
+                android:translationX="402dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar19"
+                style="@style/seeting_seekbar"
+                android:translationX="442dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar20"
+                style="@style/seeting_seekbar"
+                android:translationX="482dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar21"
+                style="@style/seeting_seekbar"
+                android:translationX="522dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar22"
+                style="@style/seeting_seekbar"
+                android:translationX="562dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar23"
+                style="@style/seeting_seekbar"
+                android:translationX="602dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar24"
+                style="@style/seeting_seekbar"
+                android:translationX="642dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar25"
+                style="@style/seeting_seekbar"
+                android:translationX="682dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar26"
+                style="@style/seeting_seekbar"
+                android:translationX="722dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar27"
+                style="@style/seeting_seekbar"
+                android:translationX="762dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar28"
+                style="@style/seeting_seekbar"
+                android:translationX="802dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar29"
+                style="@style/seeting_seekbar"
+                android:translationX="842dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar30"
+                style="@style/seeting_seekbar"
+                android:translationX="882dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar31"
+                style="@style/seeting_seekbar"
+                android:translationX="922dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar32"
+                style="@style/seeting_seekbar"
+                android:translationX="962dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar33"
+                style="@style/seeting_seekbar"
+                android:translationX="1002dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar34"
+                style="@style/seeting_seekbar"
+                android:translationX="1042dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar35"
+                style="@style/seeting_seekbar"
+                android:translationX="1082dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar36"
+                style="@style/seeting_seekbar"
+                android:translationX="1122dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar37"
+                style="@style/seeting_seekbar"
+                android:translationX="1162dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar38"
+                style="@style/seeting_seekbar"
+                android:translationX="1202dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar39"
+                style="@style/seeting_seekbar"
+                android:translationX="1242dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar40"
+                style="@style/seeting_seekbar"
+                android:translationX="1282dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar41"
+                style="@style/seeting_seekbar"
+                android:translationX="1322dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar42"
+                style="@style/seeting_seekbar"
+                android:translationX="1362dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar43"
+                style="@style/seeting_seekbar"
+                android:translationX="1402dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar44"
+                style="@style/seeting_seekbar"
+                android:translationX="1442dp" />
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar45"
+                style="@style/seeting_seekbar"
+                android:translationX="1482dp" />
+
+            <!-- 세 번째 행 (각각의 컬럼에 TextView 설정) -->
+            <TextView
+                android:id="@+id/numText1"
+                android:text="1"
+                style="@style/setting_text_number"
+                android:translationX="0dp" />
+            <TextView
+                android:id="@+id/numText2"
+                android:text="2"
+                style="@style/setting_text_number"
+                android:translationX="40dp" />
+            <TextView
+                android:id="@+id/numText3"
+                android:text="3"
+                style="@style/setting_text_number"
+                android:translationX="80dp" />
+            <TextView
+                android:id="@+id/numText4"
+                android:text="4"
+                style="@style/setting_text_number"
+                android:translationX="120dp" />
+            <TextView
+                android:id="@+id/numText5"
+                android:text="5"
+                style="@style/setting_text_number"
+                android:translationX="160dp" />
+            <TextView
+                android:text="6"
+                android:id="@+id/numText6"
+                style="@style/setting_text_number"
+                android:translationX="200dp" />
+            <TextView
+                android:text="7"
+                android:id="@+id/numText7"
+                style="@style/setting_text_number"
+                android:translationX="240dp" />
+            <TextView
+                android:text="8"
+                android:id="@+id/numText8"
+                style="@style/setting_text_number"
+                android:translationX="280dp" />
+            <TextView
+                android:id="@+id/numText9"
+                android:text="9"
+                style="@style/setting_text_number"
+                android:translationX="324dp" />
+            <TextView
+                android:id="@+id/numText10"
+                android:text="10"
+                style="@style/setting_text_number"
+                android:translationX="364dp" />
+            <TextView
+                android:id="@+id/numText11"
+                android:text="11"
+                style="@style/setting_text_number"
+                android:translationX="404dp" />
+            <TextView
+                android:id="@+id/numText12"
+                android:text="12"
+                style="@style/setting_text_number"
+                android:translationX="444dp" />
+            <TextView
+                android:id="@+id/numText13"
+                android:text="13"
+                style="@style/setting_text_number"
+                android:translationX="484dp" />
+            <TextView
+                android:id="@+id/numText14"
+                android:text="14"
+                style="@style/setting_text_number"
+                android:translationX="524dp" />
+            <TextView
+                android:id="@+id/numText15"
+                android:text="15"
+                style="@style/setting_text_number"
+                android:translationX="564dp" />
+            <TextView
+                android:id="@+id/numText16"
+                android:text="16"
+                style="@style/setting_text_number"
+                android:translationX="604dp" />
+            <TextView
+                android:id="@+id/numText17"
+                android:text="17"
+                style="@style/setting_text_number"
+                android:translationX="644dp" />
+            <TextView
+                android:id="@+id/numText18"
+                android:text="18"
+                style="@style/setting_text_number"
+                android:translationX="684dp" />
+            <TextView
+                android:id="@+id/numText19"
+                android:text="19"
+                style="@style/setting_text_number"
+                android:translationX="724dp" />
+            <TextView
+                android:id="@+id/numText20"
+                android:text="20"
+                style="@style/setting_text_number"
+                android:translationX="764dp" />
+            <TextView
+                android:id="@+id/numText21"
+                android:text="21"
+                style="@style/setting_text_number"
+                android:translationX="804dp" />
+            <TextView
+                android:id="@+id/numText22"
+                android:text="22"
+                style="@style/setting_text_number"
+                android:translationX="844dp" />
+            <TextView
+                android:id="@+id/numText23"
+                android:text="23"
+                style="@style/setting_text_number"
+                android:translationX="884dp" />
+            <TextView
+                android:id="@+id/numText24"
+                android:text="24"
+                style="@style/setting_text_number"
+                android:translationX="924dp" />
+            <TextView
+                android:id="@+id/numText25"
+                android:text="25"
+                style="@style/setting_text_number"
+                android:translationX="964dp" />
+            <TextView
+                android:id="@+id/numText26"
+                android:text="26"
+                style="@style/setting_text_number"
+                android:translationX="1004dp" />
+            <TextView
+                android:id="@+id/numText27"
+                android:text="27"
+                style="@style/setting_text_number"
+                android:translationX="1044dp" />
+            <TextView
+                android:id="@+id/numText28"
+                android:text="28"
+                style="@style/setting_text_number"
+                android:translationX="1084dp" />
+            <TextView
+                android:id="@+id/numText29"
+                android:text="29"
+                style="@style/setting_text_number"
+                android:translationX="1124dp" />
+            <TextView
+                android:id="@+id/numText30"
+                android:text="30"
+                style="@style/setting_text_number"
+                android:translationX="1164dp" />
+            <TextView
+                android:id="@+id/numText31"
+                android:text="31"
+                style="@style/setting_text_number"
+                android:translationX="1204dp" />
+            <TextView
+                android:id="@+id/numText32"
+                android:text="32"
+                style="@style/setting_text_number"
+                android:translationX="1244dp" />
+            <TextView
+                android:id="@+id/numText33"
+                android:text="33"
+                style="@style/setting_text_number"
+                android:translationX="1284dp" />
+            <TextView
+                android:id="@+id/numText34"
+                android:text="34"
+                style="@style/setting_text_number"
+                android:translationX="1324dp" />
+            <TextView
+                android:id="@+id/numText35"
+                android:text="35"
+                style="@style/setting_text_number"
+                android:translationX="1364dp" />
+            <TextView
+                android:id="@+id/numText36"
+                android:text="36"
+                style="@style/setting_text_number"
+                android:translationX="1404dp" />
+            <TextView
+                android:id="@+id/numText37"
+                android:text="37"
+                style="@style/setting_text_number"
+                android:translationX="1444dp" />
+            <TextView
+                android:id="@+id/numText38"
+                android:text="38"
+                style="@style/setting_text_number"
+                android:translationX="1484dp" />
+            <TextView
+                android:id="@+id/numText39"
+                android:text="39"
+                style="@style/setting_text_number"
+                android:translationX="1524dp" />
+            <TextView
+                android:id="@+id/numText40"
+                android:text="40"
+                style="@style/setting_text_number"
+                android:translationX="1564dp" />
+            <TextView
+                android:id="@+id/numText41"
+                android:text="41"
+                style="@style/setting_text_number"
+                android:translationX="1604dp" />
+            <TextView
+                android:id="@+id/numText42"
+                android:text="42"
+                style="@style/setting_text_number"
+                android:translationX="1644dp" />
+            <TextView
+                android:id="@+id/numText43"
+                android:text="43"
+                style="@style/setting_text_number"
+                android:translationX="1684dp" />
+            <TextView
+                android:id="@+id/numText44"
+                android:text="44"
+                style="@style/setting_text_number"
+                android:translationX="1724dp" />
+            <TextView
+                android:id="@+id/numText45"
+                android:text="45"
+                style="@style/setting_text_number"
+                android:translationX="1764dp" />
+        </RelativeLayout>
+        <!-- 취소, 초기화 버튼 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+            <!-- 초기화 버튼 -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/suggestButton"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="5dp"
+                style="@style/SettingSaveButtonStyle"
+                android:textSize="24sp"
+                android:text="AI추천" />
+            <!-- 초기화 버튼 -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/resetButton"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="5dp"
+                style="@style/SettingSaveButtonStyle"
+                android:textSize="24sp"
+                android:text="초기화" />
+
+            <!-- 저장 버튼 -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/saveButton"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="5dp"
+                style="@style/SettingSaveButtonStyle"
+                android:textSize="24sp"
+                android:text="저장" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

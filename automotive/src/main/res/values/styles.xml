@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="OMRNumStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/omrRed</item>
+    </style>
+    <style name="OMRMarkFirstStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/omrRed</item>
+        <item name="android:background">@drawable/circle_omr_first_black</item>
+    </style>
+    <style name="OMRMarkFirstStyleRed">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/omrRed</item>
+        <item name="android:background">@drawable/circle_omr_first_red</item>
+    </style>
+    <style name="OMRMarkFirstStyleGold">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/omrRed</item>
+        <item name="android:background">@drawable/circle_omr_first_gold</item>
+    </style>
+    <style name="OMRMarkFirstStyleGreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/omrRed</item>
+        <item name="android:background">@drawable/circle_omr_first_green</item>
+    </style>
+    <style name="OMRMarkSecondStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/omrRed</item>
+        <item name="android:background">@drawable/circle_omr_second_black</item>
+    </style>
+    <style name="OMRMarkSecondStyleRed">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/omrRed</item>
+        <item name="android:background">@drawable/circle_omr_second_red</item>
+    </style>
+    <style name="OMRMarkSecondStyleGold">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/omrRed</item>
+        <item name="android:background">@drawable/circle_omr_second_gold</item>
+    </style>
+    <style name="OMRMarkSecondStyleGreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#7E3A37</item>
+        <item name="android:background">@drawable/circle_omr_second_green</item>
+    </style>
+    <style name="OMRFrameStyle">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/circle_omr</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/omrRed</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+    <style name="OLDStyle">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/circle_omr</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/omrRed</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+    <style name="CasinoOuntlineStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="HistoryChartXaxis">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_marginHorizontal">7sp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/ball_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="tab_text" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">25sp</item>
+    </style>
+    <style name="setting_text_value">
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="seeting_seekbar">
+        <item name="android:layout_width">600dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:rotation">270</item>
+        <item name="android:translationY">300dp</item>
+        <item name="android:thumb">@drawable/custom_thumb_setting</item>
+        <item name="android:progressDrawable">@drawable/custom_seek_bar_track_setting</item>
+        <item name="android:thumbOffset">0dp</item>
+        <item name="android:maxHeight">5dp</item>
+    </style>
+    <style name="setting_text_number">
+        <item name="android:textSize">25dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:translationY">600dp</item>
+    </style>
+    <style name="game_ball_text">
+        <item name="android:textSize">25dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:translationY">620dp</item>
+    </style>
+    <style name="game_ball_style">
+        <item name="android:layout_marginStart">500dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">bottom|right</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_centerInParent">@drawable/circle_background_1_10</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">120sp</item>
+        <item name="android:textColor">@color/ball_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MySpinnerLook" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textSize">50sp</item>
+        <item name="overlapAnchor">true</item>
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:popupMenuStyle">@style/Widget.App.Spinner.DropDownItem</item>
+    </style>
+    <style name="Widget.App.Spinner.DropDownItem" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:textSize">50sp</item>
+    </style>
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#46bdbf</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+    <style name="BackButtonStyle">
+        <item name="android:background">@drawable/back_button</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="SettingSaveButtonStyle">
+        <item name="android:background">@drawable/settingsave_button</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="GamePopupButtonStyle">
+        <item name="android:background">@drawable/gamepopup_button</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>
