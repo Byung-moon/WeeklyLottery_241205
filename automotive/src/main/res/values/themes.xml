@@ -1,6 +1,14 @@
-<resources>
-    <!--<style name="Theme.MyApplication" parent="Theme.MaterialComponents.Light.NoActionBar" />-->
-    <!--<style name="Theme.MyApplication" parent="android:Theme.Material.Light.DarkActionBar" />-->
-    <style name="Theme.MyApplication" parent="Theme.Material3.Dark.NoActionBar">
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.Material3.Dark.NoActionBar" />
+
+    <!-- 스플래시 스크린 설정 -->
+    <style name="Theme.MySplashScreen" parent="AppTheme">
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowSplashScreenAnimationDuration">0</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="s">@color/transparent</item>
+
     </style>
+
 </resources>

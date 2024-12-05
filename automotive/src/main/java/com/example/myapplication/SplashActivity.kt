@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,9 @@ class SplashActivity : AppCompatActivity() {
             .load(R.drawable.weeklylottery_splash_animation)
             .into(lotteryAnimationView)
         ////////////////////////////
+
+        // ImageView의 알파값을 서서히 증가시키는 애니메이션 추가
+        animateFadeIn(lotteryAnimationView)
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
@@ -35,5 +39,13 @@ class SplashActivity : AppCompatActivity() {
     private fun navigateToMainActivity() {
         startActivity(Intent(this, MainActivity::class.java))
         finish() // 스플래시 화면 종료
+    }
+
+    // 알파값을 0에서 1로 변경하는 애니메이션 함수
+    private fun animateFadeIn(view: ImageView) {
+        view.alpha = 0f // 초기 알파값 설정
+        val fadeInAnimator = ObjectAnimator.ofFloat(view, "alpha", 0f, 1.5f) // 알파값을 0에서 1로 애니메이션
+        fadeInAnimator.duration = 3000 // 애니메이션 지속 시간 (밀리초)
+        fadeInAnimator.start()
     }
 }
