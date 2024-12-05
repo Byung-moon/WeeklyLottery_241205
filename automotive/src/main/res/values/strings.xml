@@ -9,6 +9,7 @@
     <string name="distance">거리</string>
     <string name="place_name">Place Name</string>
     <string name="address">Address</string>
+    <string name="button_description">명당안내 메인 버튼</string>
     <string-array name="distance_filter_options">
         <item>5km 이내</item>
         <item>10km 이내</item>
