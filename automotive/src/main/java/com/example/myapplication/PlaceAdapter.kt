@@ -47,7 +47,7 @@ class PlaceAdapter(
 
         private val selectedCardViewColor = ContextCompat.getColor(itemView.context, R.color.selected_item)
         private val selectedCardViewTextColor = ContextCompat.getColor(itemView.context, R.color.selected_textitem)
-        private val defaultColor = ContextCompat.getColor(itemView.context, android.R.color.transparent)
+        private val defaultColor = ContextCompat.getColor(itemView.context, android.R.color.background_dark)
         private val unselectedTextColor = ContextCompat.getColor(itemView.context, android.R.color.white)
         private val cardView: CardView = itemView.findViewById(R.id.CardView)
         private val placenametextView: TextView = itemView.findViewById(R.id.placeNameTextView)

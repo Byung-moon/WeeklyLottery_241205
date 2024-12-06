@@ -24,7 +24,8 @@
             android:layout_gravity="center_vertical|start"
             android:gravity="start|center_vertical"
             android:text="@string/distance"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:fontFamily="@font/gmarketsansbold"/>
 
         <!-- 장소 정보 영역 -->
         <LinearLayout
@@ -40,23 +41,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:paddingVertical="12dp"
+                android:layout_marginTop="8dp"
+                android:paddingVertical="15dp"
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp"
                 android:text="@string/place_name"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/gmarketsansbold"/>
 
             <!-- 플레이스 주소 -->
             <TextView
                 android:id="@+id/placeAddressTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="12dp"
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp"
                 android:text="@string/address"
-                android:textSize="18sp" />
+                android:textSize="20sp"
+                android:fontFamily="@font/gmarketsansmedium"/>
         </LinearLayout>
 
         <!-- 메달 및 당첨 횟수 영역 -->
