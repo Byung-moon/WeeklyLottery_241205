@@ -204,4 +204,7 @@
         <item name="android:background">@drawable/gamepopup_button</item>
         <item name="android:textColor">@color/black</item>
     </style>
+    <style name="CustomTextStyle" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="fontFamily">@font/gmarketsansbold</item>
+    </style>
 </resources>

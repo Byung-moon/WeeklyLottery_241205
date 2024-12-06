@@ -32,11 +32,11 @@
     <color name="omrPen_second_green">#FF008F00</color>
     <color name="omrPen_first_gold">#80F7CE46</color>
     <color name="omrPen_second_gold">#FFF7CE46</color>
-    <color name="ball_stroke_1_10">#FFD700</color>
-    <color name="ball_stroke_11_20">#0066FC</color>
-    <color name="ball_stroke_21_30">#FC5588</color>
+    <color name="ball_stroke_1_10">#f7ce46</color>
+    <color name="ball_stroke_11_20">#5664a7</color>
+    <color name="ball_stroke_21_30">#9C7070</color>
     <color name="ball_stroke_31_40">#777777</color>
-    <color name="ball_stroke_41_45">#77AA00</color>
+    <color name="ball_stroke_41_45">#5a7d61</color>
     <color name="ball_white">#FFFFFF</color>
     <color name="lottery_paper">#FAF8EF</color>
     <color name="main_menu_color">#212121</color>

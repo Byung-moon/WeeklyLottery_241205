@@ -1424,7 +1424,10 @@
         android:layout_gravity="center"
         style="@style/GamePopupButtonStyle"
         android:text="마킹할 펜을 선택해주세요"
-        android:textSize="24sp"
-        android:textAllCaps="false"/>
+        android:textSize="32sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:fontFamily="@font/gmarketsansbold"/>
+
 
 </FrameLayout>
