@@ -1,7 +1,16 @@
 package com.example.myapplication
 
+import android.annotation.SuppressLint
 import android.content.ContentValues.TAG
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
+import android.graphics.Point
+import android.graphics.Typeface
+import android.graphics.drawable.BitmapDrawable
 import android.location.Location
 import android.net.Uri
 import android.os.Bundle
@@ -17,6 +26,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.content.ContextCompat
+import androidx.core.content.res.ResourcesCompat
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.tabs.TabLayout
@@ -281,7 +292,7 @@ class NaviActivity : AppCompatActivity() {
 
         val location = GeoPoint(selectedPlace!!.latitude, selectedPlace!!.longitude)
         mapView.controller.setCenter(location)
-        mapView.controller.setZoom(15.0)
+        mapView.controller.setZoom(16.0)
 
         // 마커 추가
         mapView.overlays.clear()
@@ -289,7 +300,68 @@ class NaviActivity : AppCompatActivity() {
         marker.position = location
         marker.setAnchor(org.osmdroid.views.overlay.Marker.ANCHOR_CENTER, org.osmdroid.views.overlay.Marker.ANCHOR_BOTTOM)
         marker.title = selectedPlace!!.name
+
+        // 클릭 동작 비활성화
+        marker.setOnMarkerClickListener { _, _ ->
+            // 아무 동작도 하지 않음
+            true
+        }
+
+        // Bitmap으로 커스텀 마커 아이콘 크기 조정 및 설정
+        val originalBitmap = BitmapFactory.decodeResource(resources, R.drawable.custom_marker_icon)
+        val scaledBitmap = Bitmap.createScaledBitmap(originalBitmap, 50, 85, false)
+        val customDrawable = BitmapDrawable(resources, scaledBitmap)
+        marker.icon = customDrawable
+
+        // 텍스트 오버레이 추가
+        val textOverlay = object : org.osmdroid.views.overlay.Overlay() {
+            override fun draw(canvas: Canvas, mapView: MapView, shadow: Boolean) {
+                super.draw(canvas, mapView, shadow)
+
+                // 마커 위치를 화면 좌표로 변환
+                val point = Point()
+                val projection = mapView.projection
+                projection.toPixels(marker.position, point)
+
+
+                // 텍스트 스타일 설정
+                val textPaint = Paint().apply {
+                    color = Color.BLACK // 텍스트 색상
+                    textSize = 24f // 텍스트 크기
+                    textAlign = Paint.Align.CENTER // 텍스트 중앙 정렬
+                    style = Paint.Style.FILL // 텍스트는 채우기 스타일
+                    isAntiAlias = true
+                    typeface = Typeface.create(Typeface.DEFAULT, Typeface.BOLD)
+                    typeface = ResourcesCompat.getFont(this@NaviActivity, R.font.gmarketsansbold)
+                }
+
+                // 텍스트 외곽선 스타일 설정 (외곽선용 Paint)
+                val strokePaint = Paint().apply {
+                    color = Color.WHITE // 외곽선 색상
+                    textSize = 24f // 텍스트 크기 (내부와 동일)
+                    textAlign = Paint.Align.CENTER // 텍스트 중앙 정렬
+                    style = Paint.Style.STROKE // 외곽선 스타일
+                    strokeWidth = 6f // 외곽선 두께
+                    isAntiAlias = true
+                    typeface = Typeface.create(Typeface.DEFAULT, Typeface.BOLD)
+                    typeface = ResourcesCompat.getFont(this@NaviActivity, R.font.gmarketsansbold)
+                }
+
+                // 텍스트 계산
+                val text = selectedPlace!!.name
+                val textYOffset = 20f // 텍스트 위치 조정 오프섹(마커 밑으로)
+
+                // 텍스트 외곽선 먼저 그리기
+                canvas.drawText(text,point.x.toFloat(),point.y.toFloat() + textYOffset,strokePaint)
+
+                // 텍스트 내부 채우기
+                canvas.drawText(text, point.x.toFloat(), point.y.toFloat() + textYOffset, textPaint)
+            }
+        }
+
+
         mapView.overlays.add(marker)
+        mapView.overlays.add(textOverlay)
     }
     private fun initializeMap(){
         val ctx = applicationContext
